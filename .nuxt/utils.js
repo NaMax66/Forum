@@ -150,7 +150,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {"APP_IP":"127.0.4.51","SERVER_IP":"127.0.4.51","APP_PORT":"51278","SERVER_PORT":"51278"}
+      env: {"APP_IP":"localhost","SERVER_IP":"127.0.4.51","APP_PORT":"8000","SERVER_PORT":"51278"}
     }
     // Only set once
     if (context.req) {
