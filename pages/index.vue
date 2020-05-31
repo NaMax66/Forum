@@ -21,9 +21,6 @@
 import { mapMutations } from 'vuex'
 export default {
   name: 'main_page',
-  components: {
-    AppLogo
-  },
   data: () => ({
     messageRxd: '',
     name: '',
