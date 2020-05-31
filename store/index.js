@@ -1,7 +1,7 @@
 export const state = () =>({
   chatMessages: 'Hi',
   user: {},
-  messages: ['Hello'],
+  messages: [],
   users: []
 })
 
