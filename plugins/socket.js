@@ -4,7 +4,7 @@ import VueSocketIO from 'vue-socket.io'
 export default function({store}) {
   Vue.use(new VueSocketIO({
     debug: false,
-    connection: `http://${process.env.APP_IP}:${process.env.APP_PORT}`,
+    connection: `https://forum1.na4u.ru/`,
     vuex: {
       store,
       actionPrefix: 'SOCKET_',
