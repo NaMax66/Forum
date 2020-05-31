@@ -1,11 +1,10 @@
 import Vue from 'vue'
 import VueSocketIO from 'vue-socket.io'
-const { APP_PORT, APP_IP } = process.env;
 
 export default function({store}) {
   Vue.use(new VueSocketIO({
     debug: false,
-    connection: `http://${APP_IP}:${APP_PORT}`,
+    connection: `http://${process.env.APP_IP}:${process.env.APP_PORT}`,
     vuex: {
       store,
       actionPrefix: 'SOCKET_',
