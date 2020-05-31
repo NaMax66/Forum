@@ -11,6 +11,9 @@
       </label>
       <button @click.prevent="submitForm">Отправить</button>
     </form>
+    <div class="room_list">
+      <button @click.prevent="submitForm('Друзья')">Друзья</button>
+    </div>
   </div>
 </template>
 
@@ -32,10 +35,11 @@ export default {
   },
   methods: {
     ...mapMutations(["setUser"]),
-    submitForm () {
+    submitForm (presetRoom) {
+      let room = presetRoom ? presetRoom : this.room
       const user = {
         name: this.name,
-        room: this.room
+        room
       }
       /* передаем на сервер объект с данными пользователя */
       /* третий объект - это функция, которая будет вызвана после того как серер выполнит действия */
