@@ -35,7 +35,6 @@ module.exports = {
   build: {
     postcss: [
       require('postcss-nested')(),
-      require('postcss-responsive-type')(),
       require('postcss-hexrgba')()
     ],
     extend (config, { isDev, isClient }) {

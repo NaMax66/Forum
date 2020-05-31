@@ -30,7 +30,6 @@
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-vue": "^4.0.0",
-    "postcss-responsive-type": "^1.0.0",
     "socket.io": "^2.3.0"
   }
 }
