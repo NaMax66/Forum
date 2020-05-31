@@ -9,9 +9,9 @@ const m = (name, text, id) => ({name, text, id})
 io.on('connection', socket => {
   console.log('IO Connected')
   /* слушаем емит с сервера */
-  /* cb - это колбек который приходит с клиента */
   socket.on('userJoined', (data, cb) => {
     if (!data.name || !data.room) {
+      /* cb - это колбек который приходит с клиента */
       return cb('данные некорректны')
     }
     socket.join(data.room)
