@@ -18,8 +18,7 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-import { mapState, mapMutations } from 'vuex'
+import { mapMutations } from 'vuex'
 export default {
   name: 'main_page',
   components: {
