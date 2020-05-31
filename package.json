@@ -21,7 +21,8 @@
     "postcss-nested": "^4.2.1",
     "vue": "^2.6.11",
     "vue-socket.io": "^3.0.7",
-    "vuelidate": "^0.7.5"
+    "vuelidate": "^0.7.5",
+    "@nuxtjs/dotenv": "^1.4.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

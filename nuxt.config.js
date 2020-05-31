@@ -1,4 +1,9 @@
+require('dotenv').config()
 module.exports = {
+  server: {
+    port: process.env.APP_PORT,
+    host: process.env.APP_IP
+  },
   /*
   ** Headers of the page
   */
@@ -15,6 +20,7 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/pwa',
+    '@nuxtjs/dotenv'
   ],
   plugins: [
     /* сообщаем nuxt чтобы на сервере этот плагин не инициализировался */
