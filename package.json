@@ -22,14 +22,14 @@
     "vue": "^2.6.11",
     "vue-socket.io": "^3.0.7",
     "vuelidate": "^0.7.5",
-    "@nuxtjs/dotenv": "^1.4.1"
+    "@nuxtjs/dotenv": "^1.4.1",
+    "socket.io": "^2.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^4.19.1",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.1",
-    "eslint-plugin-vue": "^4.0.0",
-    "socket.io": "^2.3.0"
+    "eslint-plugin-vue": "^4.0.0"
   }
 }
