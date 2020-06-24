@@ -66,7 +66,13 @@
     flex-direction: column;
     align-items: flex-end;
     overflow-y: auto;
-    height: 100%;
+    height: 90%;
+    @media (min-width: 400px) {
+      height: 95%;
+    }
+    @media (min-width: 800px) {
+      height: 100%;
+    }
     &::-webkit-scrollbar {
       display: none;
     }
