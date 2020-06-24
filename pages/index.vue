@@ -83,6 +83,12 @@
 
     & label {
       display: block;
+      & button {
+        margin-top: 1.5rem;
+        @media (min-width: 400px) {
+          margin-top: 0;
+        }
+      }
     }
     & h5 {
       margin-bottom: 1rem;
