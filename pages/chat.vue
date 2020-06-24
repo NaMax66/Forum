@@ -142,14 +142,16 @@
     }
 
     & button {
+      display: block;
       border: none;
       background-color: rgba(#BF360C, 0.7);
       width: 8rem;
       font-size: 1.5rem;
-      margin-left: 1rem;
+      margin: 0 0 0 1rem;
       height: 5.6rem;
       color: var(--white);
       border-radius: var(--border-radius);
+      box-shadow: none;
     }
   }
 </style>
