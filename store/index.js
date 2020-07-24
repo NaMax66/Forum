@@ -1,14 +1,10 @@
 export const state = () =>({
-  chatMessages: 'Hi',
   user: {},
   messages: [],
   users: []
 })
 
 export const mutations = {
-  SET_MESSAGE(state, chatMessage) {
-    state.chatMessages += chatMessage
-  },
   setUser(state, user) {
     state.user = user
   },
@@ -22,12 +18,5 @@ export const mutations = {
   },
   SOCKET_updateUsers(state, users) {
     state.users = users
-  }
-}
-
-export const actions = {
-  FORMAT_MESSAGE({ commit }, chatMessage) {
-    const chatMsgFmt = `${new Date().toLocaleString()}: ${chatMessage}\r\n`
-    commit('SET_MESSAGE', chatMsgFmt)
   }
 }
